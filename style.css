@@ -1,0 +1,249 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+header img {
+    height: 30px;
+}
+
+.top-buttons a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.top-buttons a:hover {
+    background-color: #aaa;
+    color: #fff;
+}
+
+.purpose-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.purpose-button i {
+    margin-right: 5px;
+}
+
+.search-btn {
+    background-color: blue;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.search-btn i {
+    margin-right: 5px;
+}
+
+.travel-size-options {
+    display: flex;
+    justify-content: center;
+}
+
+.option-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.option-btn:hover {
+    background-color: #0069d9;
+}
+
+.offer-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.offer-card {
+    display: flex;
+    align-items: center;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.offer-card img {
+    max-width: 100%;
+    height: auto;
+    margin-right: 10px;
+}
+
+.offer-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.offer-card-date {
+    font-size: 14px;
+    color: #777777;
+}
+
+.offer-card-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.offer-card-price {
+    font-size: 16px;
+    color: #009900;
+    font-weight: bold;
+}
+
+.offer-card-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.offer-card-button:hover {
+    background-color: #0069d9;
+}
+
+.contact-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.travel-type-options {
+    display: flex;
+    justify-content: center;
+}
+
+.recommendations-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.recommendation-card {
+    position: relative;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.recommendation-card-rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.recomendation-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.recommendation-card-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 60px;
+}
+
+.recommendation-card-name {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.recommendation-card-location {
+    font-size: 14px;
+    color: #777777;
+}
+
+.swipe-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.swipe-left-button,
+.swipe-right-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.swipe-left-button:hover,
+.swipe-right-button:hover {
+    background-color: #0056b3;
+}
+
+.swipe-left-button {
+    margin-right: 10px;
+}
+
+.swipe-right-button {
+    margin-left: 10px;
+}
+
+.registration-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    background-color: #f1f1f1;
+    padding: 10px;
+}
+
+.bottom-buttons a {
+    display: inline-block;
+    margin-left: 10px;
+    padding: 5px 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+.bottom-buttons a:hover {
+    background-color: #aaa;
+    color: #fff;
+}

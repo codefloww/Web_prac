@@ -1,14 +1,227 @@
 <!DOCTYPE html>
-<html lang="en-US" >
+<html lang="en-US">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Web page</title>
+    <title>Treloo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
 </head>
+
 <body>
-    <h1>Web Page</h1>
-    <div>
-        <p style="color: grey;">Landing page</p>
-    </div>
+    <header class="general-header">
+        <img src="assets/images/logo.png" alt="icon">
+        <nav class="top-buttons">
+            <a href="#">Review</a>
+            <a href="#">Tips</a>
+            <a href="#">Alerts</a>
+            <a href="#">Blog</a>
+            <button>Sign in</button>
+        </nav>
+    </header>
+    <main>
+        <section class="greeting-page">
+            <img src="assets/images/land-background.png">
+            <h1>Discover Your Life, Travel Where You Want</h2>
+                <h4>Would you explore natur paradise in the world, let’s find the best destination in world with us.
+                </h4>
+        </section>
+        <section class="booking-type">
+            <div class="purpose-buttons">
+                <button class="purpose-button">
+                    <i class="fas fa-plane"></i>
+                    Flight
+                </button>
+                <button class="purpose-button">
+                    <i class="fas fa-hotel"></i>
+                    Hotel
+                </button>
+            </div>
+            <div class="date-type-selector">
+                <div class="locations-selector">
+                    <p>Leaving from</p>
+                    <select>
+                        <option selected>Dubai</option>
+                    </select>
+
+                    <img src="assets/images/plane-circle.png" alt="icon">
+
+                    <p>Going to</p>
+                    <select>
+                        <option selected>New York</option>
+                    </select>
+                </div>
+                <div class="date-selector">
+                    <p>Leave
+                        <i class="fas fa-plane"></i>
+                    </p>
+                    <input type="date">
+
+                    <img src="assets/images/calendar-circle.png" alt="icon">
+
+                    <p>Return
+                        <i class="fas fa-plane"></i>
+                        <input type="date">
+                </div>
+                <button class="search-btn">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+        </section>
+        <section id="offers">
+            <h2>Special Upcoming Offers</h2>
+            <div class="travel-size-options">
+                <button class="option-btn">Team</button>
+                <button class="option-btn">Couple</button>
+                <button class="option-btn">Family</button>
+            </div>
+            <div class="offer-cards">
+                <article class="offer-card">
+                    <img src="assets/images/offer-1.png" alt="Product Image">
+                    <div class="offer-card-details">
+                        <time class="offer-card-date">14 Feb 2022</time>
+                        <small class="offer-card-tag">Relax</small>
+                        <span>3 Days, 3 Nights</span>
+                        <p class="offer-card-name">Long Sea</p>
+                        <p class="offer-card-price">700$/Person</p>
+                        <button class="offer-card-button">Book Now</button>
+                    </div>
+                </article>
+                <article class="offer-card">
+                    <img src="assets/images/offer-2.png" alt="Product Image">
+                    <div class="offer-card-details">
+                        <time class="offer-card-date">18 Jun 2022</time>
+                        <small class="offer-card-tag">Adventure</small>
+                        <span>4 Days, 3 Nights</span>
+                        <p class="offer-card-name">Ansgar Scheffold</p>
+                        <p class="offer-card-price">400$/Person</p>
+                        <button class="offer-card-button">Book Now</button>
+                    </div>
+                </article>
+                <article class="offer-card">
+                    <img src="assets/images/offer-3.png" alt="Product Image">
+                    <div class="offer-card-details">
+                        <time class="offer-card-date">22 Dec 2022</time>
+                        <small class="offer-card-tag">Relax</small>
+                        <span>7 Days, 6 Nights</span>
+                        <p class="offer-card-name">Lona X</p>
+                        <p class="offer-card-price">340$/Person</p>
+                        <button class="offer-card-button">Book Now</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="ad-contact">
+            <img src="assets/images/travel-image.png" alt="Product Image">
+            <div>
+                <h2>Travel Any Corner of The World With Us</h2>
+                <p>Would you explore nature paradise in the world, let’s find the best destination in world with us,
+                    Would
+                    you explore nature paradise in the world, let’s find the best destination in world with us. Would
+                    you
+                    explore nature paradise in the world, let’s find the best destination in world with us.
+                    Would you explore nature paradise in the world, let’s find the best destination in world with us.
+                </p>
+                <button class="contact-button">Contact Us</button>
+            </div>
+        </section>
+        <section id="recommendations">
+            <h2>Recommended Destination</h2>
+            <div class="travel-type-options">
+                <button class="option-btn">Popular</button>
+                <button class="option-btn">Adventure</button>
+                <button class="option-btn">Beach</button>
+            </div>
+            <div class="recommendation-cards">
+                <article class="recommendation-card">
+                    <div class="recommendation-card-rating">4.5
+                        <img src="assets/images/star.png" alt="icon">
+                    </div>
+                    <img src="assets/images/recommendation-1.png" alt="Product Image">
+                    <div class="recommendation-card-details">
+                        <p class="recommendation-card-name">King Mountain</p>
+                        <p class="recommendation-card-location">Cambodia</p>
+                    </div>
+                </article>
+                <article class="recommendation-card">
+                    <div class="recommendation-card-rating">3.4
+                        <img src="assets/images/star.png" alt="icon">
+                    </div>
+                    <img src="assets/images/recommendation-2.png" alt="Product Image">
+                    <div class="recommendation-card-details">
+                        <p class="recommendation-card-name">King Mountain</p>
+                        <p class="recommendation-card-location">Cambodia</p>
+                    </div>
+                </article>
+                <article class="recommendation-card">
+                    <div class="recommendation-card-rating">4.2
+                        <img src="assets/images/star.png" alt="icon">
+                    </div>
+                    <img src="assets/images/recommendation-3.png" alt="Product Image">
+                    <div class="recommendation-card-details">
+                        <p class="recommendation-card-name">King Mountain</p>
+                        <p class="recommendation-card-location">Cambodia</p>
+                    </div>
+                </article>
+                <article class="recommendation-card">
+                    <div class="recommendation-card-rating">3.5
+                        <img src="assets/images/star.png" alt="icon">
+                    </div>
+                    <img src="assets/images/recommendation-4.png" alt="Product Image">
+                    <div class="recommendation-card-details">
+                        <p class="recommendation-card-name">King Mountain</p>
+                        <p class="recommendation-card-location">Cambodia</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="comments">
+            <article class="comment">
+                <img src="assets/images/double-quotes.png" alt="quote">
+                <h4>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone
+                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</h4>
+                <p>-Vand D</p>
+                <p>Happy Treloo</p>
+                <img src="assets/images/avatar-1.png">
+                <div class="client-rating">
+                    <img src="assets/images/star.png" alt="icon">
+                    4.5
+                </div>
+            </article>
+            <article class="comments">
+                <img src="assets/images/double-quotes.png" alt="quote">
+                <h4>Our trip to Morocco was truly a onece in a lifetime experience and we are so grateful to everyone
+                    that made it happen seamlessly. Our travel planner, Jaouad, was increadible.</h4>
+                <p>-Tru Vio</p>
+                <p>Happy Treloo</p>
+                <img src="assets/images/avatar-2.png">
+                <div class="client-rating">
+                    <img src="assets/images/star.png" alt="icon">
+                    4.9
+                </div>
+            </article>
+            <div class="swipe-buttons">
+                <button class="swipe-left-button"><i class="fas fa-chevron-left"></i></button>
+                <button class="swipe-right-button"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+        <section id="discount">
+            <img src="assets/images/registration-background.png" alt="background">
+            <h2>Don't Miss The 50% Discount if You register Today</h2>
+            <button class="registration-button">Register Today</button>
+        </section>
+    </main>
+    <footer class="general-footer">
+        <p>© 2022 Treloo LLC - All right reserved.</p>
+        <nav class="bottom-buttons">
+            <a href="#">Review</a>
+            <a href="#">Tips</a>
+            <a href="#">Alerts</a>
+            <a href="#">Blog</a>
+        </nav>
+    </footer>
 </body>
+
 </html>
