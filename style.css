@@ -1,249 +1,778 @@
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    background-color: #f1f1f1;
-    padding: 10px;
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
-header img {
-    height: 30px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.top-buttons a {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 5px 10px;
-    color: #333;
-    text-decoration: none;
+body {
+    background: #f5f5f5;
+    font-family: "Poppins", sans-serif;
 }
 
-.top-buttons a:hover {
-    background-color: #aaa;
-    color: #fff;
+main {
+    max-width: 90%;
+    margin: 0 auto;
 }
 
-.purpose-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    font-size: 18px;
-}
-
-.purpose-button i {
-    margin-right: 5px;
-}
-
-.search-btn {
-    background-color: blue;
-    color: white;
-    border: none;
-    padding: 10px 10px;
-    border-radius: 5px;
-}
-
-.search-btn i {
-    margin-right: 5px;
-}
-
-.travel-size-options {
-    display: flex;
-    justify-content: center;
-}
-
-.option-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    margin: 5px;
-}
-
-.option-btn:hover {
-    background-color: #0069d9;
-}
-
-.offer-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.offer-card {
-    display: flex;
-    align-items: center;
-    background-color: #f2f2f2;
-    border-radius: 4px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.offer-card img {
-    max-width: 100%;
-    height: auto;
-    margin-right: 10px;
-}
-
-.offer-card-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.offer-card-date {
-    font-size: 14px;
-    color: #777777;
-}
-
-.offer-card-name {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.offer-card-price {
-    font-size: 16px;
-    color: #009900;
-    font-weight: bold;
-}
-
-.offer-card-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-
-.offer-card-button:hover {
-    background-color: #0069d9;
-}
-
-.contact-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-
-.travel-type-options {
-    display: flex;
-    justify-content: center;
-}
-
-.recommendations-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.recommendation-card {
-    position: relative;
-    background-color: #f2f2f2;
-    border-radius: 4px;
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-}
-
-.recommendation-card-rating {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #007bff;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 4px;
-    font-size: 16px;
-}
-
-.recomendation-card img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-.recommendation-card-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 60px;
-}
-
-.recommendation-card-name {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.recommendation-card-location {
-    font-size: 14px;
-    color: #777777;
-}
-
-.swipe-buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
+main .section-title {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 7rem;
     text-align: center;
+    color: #000000;
 }
 
-.swipe-left-button,
-.swipe-right-button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 18px;
+.opening-section {
+    height: 120vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)),
+        url(assets/images/land-background.png);
+    background-position: center center;
+    background-size: cover;
 }
 
-.swipe-left-button:hover,
-.swipe-right-button:hover {
-    background-color: #0056b3;
-}
-
-.swipe-left-button {
-    margin-right: 10px;
-}
-
-.swipe-right-button {
-    margin-left: 10px;
-}
-
-.registration-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    margin-top: 10px;
-}
-
-footer {
+.opening-section .general-header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 50px;
-    background-color: #f1f1f1;
-    padding: 10px;
+    width: 80vw;
+    padding: 2rem 0rem;
+    margin: 0rem auto;
 }
 
-.bottom-buttons a {
-    display: inline-block;
-    margin-left: 10px;
-    padding: 5px 10px;
-    color: #333;
+.opening-section .general-header .logo {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 5rem;
+    line-height: 7rem;
+    color: #ffffff;
     text-decoration: none;
 }
 
-.bottom-buttons a:hover {
-    background-color: #aaa;
+.opening-section .general-header .top-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.opening-section .general-header .top-buttons a {
+    line-height: 3.6rem;
+    margin-left: 1rem;
+    padding: 1.4rem 3rem;
+    border-radius: 1rem;
+    transition: all 0.5s;
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.opening-section .general-header .top-buttons a:hover {
+    color: #3e86f5;
+}
+
+.opening-section .general-header .top-buttons button {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 1.4rem 3rem;
+    border-radius: 1rem;
+    line-height: 3.6rem;
+    margin-left: 1rem;
+    transition: all 0.4s;
+    font-weight: 400;
+    font-size: 2.4rem;
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.opening-section .general-header .top-buttons button {
+    background: #ffffff;
+    font-weight: 600;
+    color: #3e86f5;
+}
+
+.opening-section .general-header .top-buttons button:hover {
+    background: #3e86f5;
+    color: #ffffff;
+}
+
+.opening-section .greeting-page {
+    padding: 19rem 0;
+}
+
+.opening-section .greeting-page h1 {
+    line-height: 9.6rem;
+    font-weight: 500;
+    font-size: 7rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+.opening-section .greeting-page h4 {
+    text-align: center;
+    line-height: 200%;
+    font-weight: 400;
+    font-size: 2.4rem;
+    padding-top: 4rem;
+    color: #ffffff;
+}
+
+.booking-type {
+    max-width: 90%;
+    margin: -15rem auto 0rem auto;
+}
+
+.booking-type .purpose-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 27rem;
+    border-radius: 25px 25px 0 0;
+    padding: 1rem;
+    gap: 1rem;
+    background: #fff;
+}
+
+.booking-type .purpose-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+    width: 100%;
+    border-radius: 2.3rem;
+    font-weight: 500;
+    font-size: 2.1rem;
+    line-height: 2.7rem;
+    transition: all 0.4s;
+    border: none;
+    padding: 2rem;
+    cursor: pointer;
+    color: #000000;
+}
+
+.booking-type .purpose-button:hover {
+    background: rgba(62, 134, 245, 0.2);
+}
+
+.booking-type .purpose-button img {
+    max-width: 2rem;
+    margin-right: 1rem;
+}
+
+.booking-type .date-type-selector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 7rem 5rem;
+    gap: 5rem;
+    border-radius: 0 3.5rem 3.5rem 3.5rem;
+    background: #fff;
+}
+
+.booking-type .date-type-selector .selector {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4.4rem 2.2rem;
+    border: 2px solid rgba(172, 172, 172, 0.5);
+    border-radius: 2.5rem;
+    background: #ffffff;
+}
+
+.booking-type .date-type-selector p {
+    display: flex;
+    align-items: center;
+    line-height: 2.7rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.booking-type .locations-selector select {
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 500;
+    font-size: 2.5rem;
+    line-height: 2.7rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+.booking-type .date-type-selector img {
+    padding-left: 1rem;
+}
+
+.booking-type .selector .locations-selector img {
+    width: 4rem;
+    height: 4rem;
+}
+
+
+.booking-type .date-selector .since img {
+    max-width: 3rem;
+}
+
+.booking-type .date-selector .till img {
+    max-width: 3rem;
+}
+
+
+.booking-type .date-selector {
+    width: 100%;
+}
+
+.booking-type .date-selector input {
+    border: none;
+    outline: none;
+    background: none;
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    color: #000000;
+    cursor: pointer;
+}
+
+
+.booking-type .search {
+    border: none;
+    width: auto;
+}
+
+.booking-type .search .search-btn {
+    height: 15.4rem;
+    width: 15.4rem;
+    border-radius: 5rem;
+    border: none;
+    background: rgba(62, 134, 245, 0.8);
+    cursor: pointer;
+}
+
+.booking-type .search .search-btn img {
+    max-width: 7rem;
+    filter: invert(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.booking-type .search .search-btn:hover img {
+    transform: scale(1.1);
+}
+
+.offers {
+    padding: 16rem 0rem;
+}
+
+.offers .travel-size-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 35rem;
+    padding: 1.2rem;
+    margin: 6rem auto 0rem;
+    border-radius: 1.5rem;
+    background: #ffffff;
+}
+
+.offers .travel-size-options button {
+    line-height: 2.7rem;
+    border-radius: 1.1rem;
+    padding: 1rem 2.5rem;
+    font-weight: 600;
+    font-size: 1.8em;
+    text-decoration: none;
+    border: none;
+    background: none;
+    color: rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease-in-out;
+}
+
+.offers .travel-size-options button:hover {
+    background: #3e86f5;
+    color: #ffffff;
+}
+
+.offers .travel-size-options .active {
+    background: #3e86f5;
+    transition: all 0.5s;
+    color: #ffffff;
+}
+
+.offers .offer-cards {
+    margin-top: 4rem;
+    display: flex;
+    align-self: start;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.offers .offer-cards .offer-card {
+    width: 25%;
+    position: relative;
+    padding: 2.7rem;
+    background: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+.offers .offer-cards .offer-card img {
+    width: 100%;
+}
+
+.offers .offer-card .offer-card-date {
+    position: absolute;
+    right: -16%;
+    top: 37%;
+    line-height: 2.7rem;
+    letter-spacing: 0.5em;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: rgba(0, 0, 0, 0.5);
+    transform: rotate(90deg);
+}
+
+.offers .offer-card .card-main {
+    padding-right: 3rem;
+    display: flex;
+    align-items: start;
+}
+
+.offers .offer-card .card-main img {
+    border-radius: 4rem;
+}
+
+.offers .offer-card .card-tags {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0rem;
+}
+
+.offers .offer-card-tag {
+    padding: 0.1rem 1rem;
+    line-height: 2rem;
+    border-radius: 10rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+
+.relax {
+    background: #ddddff;
+    color: #8484d3;
+}
+
+.adventure {
+    background: #fcddec;
+    color: #f178b6;
+}
+
+.offers .card-tags .offer-card-duration {
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+    padding-left: 1.3rem;
+}
+
+.offers .card-main .offer-card-duration {
+    padding-left: 2rem;
+}
+
+.offers .card-descr .offer-card-name {
+    line-height: 3.6rem;
+    font-weight: 600;
+    font-size: 2.4rem;
+    color: #000000;
+}
+
+.offers .card-descr .card-buy {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.offers .card-descr .offer-card-price {
+    line-height: 3.6rem;
+    font-weight: 500;
+    font-size: 2.4rem;
+    color: #000000;
+}
+
+.offers .card-descr .greyout {
+    font-size: 2.2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.offers .card-descr .offer-card-button {
+    padding: 1.5rem 2rem;
+    line-height: 2rem;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+    border: none;
+    transition: all 0.2s ease-in-out;
+    color: #3e86f5;
+    background: #f2f6ff;
+    cursor: pointer;
+}
+
+.offers .offer-card .offer-card-button:hover {
+    background: #ecf2ff;
+}
+
+.ad-contact {
+    display: flex;
+    align-items: center;
+}
+
+.ad-contact .banner {
+    width: 50%;
+}
+
+.ad-contact .banner img {
+    width: 100%;
+}
+
+.ad-contact .content {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 47%;
+    margin-left: 10rem;
+}
+
+.ad-contact .content h2 {
+    font-weight: 600;
+    font-size: 5rem;
+    line-height: 7rem;
+    text-align: left;
+    color: #000000;
+}
+
+.ad-contact .content p {
+    line-height: 200%;
+    padding-top: 3rem;
+    width: 90%;
+    font-weight: 400;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.ad-contact .content button {
+    padding: 2.3rem 3.4rem;
+    border: none;
+    margin-top: 3rem;
+    font-weight: 600;
+    font-size: 2rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 20px #a6cbff;
+    color: #ffffff;
+    background: #3e86f5;
+    cursor: pointer;
+}
+
+.ad-contact .content button:hover {
+    background: #3e86f5;
+    box-shadow: 0 0 30px #84b7ff;
+}
+
+.recommendations {
+    padding: 12rem 0rem;
+}
+
+.recommendations .travel-type-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 40rem;
+    padding: 1.2rem;
+    margin: 6rem auto 0rem;
+}
+
+.recommendations .travel-type-options button {
+    transition: all 0.4s;
+    border-radius: 1.1rem;
+    padding: 1rem 2.5rem;
+    border: none;
+    background: none;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.recommendations .travel-type-options button:hover {
+    background: #ffffff;
+    transition: all 0.4s;
+    color: #3e86f5;
+}
+
+.recommendations .recommendation-cards {
+    padding-top: 7.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.recommendations .recommendation-cards .recommendation-card {
+    width: 20%;
+    position: relative;
+    border-radius: 3.2rem;
+    padding: 1rem;
+    background: #ffffff;
+    box-shadow: 4px 4px 25px rgba(0, 0, 0, 0.1);
+}
+
+.recommendations .recommendation-cards .recommendation-card img {
+    width: 100%;
+    border-radius: 2.5rem;
+}
+
+.recommendations .recommendation-card .recommendation-card-rating {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    line-height: 1.8rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    padding: 0.25rem 1rem;
+    border-radius: 1rem;
+    top: 2rem;
+    right: 3rem;
+    z-index: 999;
+    color: #000000;
+    background: #fff;
+}
+
+.recommendations .recommendation-card .recommendation-card-rating img {
+    padding-right: 0.1rem;
+    max-width: 1.7rem;
+}
+
+.recommendations .recommendation-card .recommendation-card-details {
+    margin-top: 1rem;
+    padding: 1rem 2.5rem 1rem 1rem;
+}
+
+.recommendations .recommendation-card-details .recommendation-card-name {
+    line-height: 2.7rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    color: #000000;
+}
+
+.recommendations .recommendation-card-details .recommendation-card-location {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+}
+
+.recommendations .recommendation-card-details .recommendation-card-location img {
+    max-width: 2.5rem;
+}
+
+.recommendations .recommendation-card-details .recommendation-card-location p {
+    line-height: 2rem;
+    font-weight: 500;
+    font-size: 1.4rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.comments {
+    padding: 5rem 0rem 10rem;
+}
+
+.comments .comments-list {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    margin-top: 1rem;
+    gap: 2rem;
+}
+
+.comments .comment {
+    position: relative;
+    text-align: center;
+    width: 100%;
+    padding: 7rem 5rem 15rem;
+    background-color: #ffffff;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.4),
+            rgba(255, 255, 255, 0.4)),
+        url(assets/images/double-quotes.png);
+    background-repeat: no-repeat;
+    background-size: 15rem;
+    background-position: 50% 10%;
+    border-radius: 5rem;
+}
+
+.comments .comment h4 {
+    text-align: center;
+    line-height: 4.2rem;
+    font-weight: 500;
+    padding-top: 2rem;
+    font-size: 2.1rem;
+    color: #000000;
+}
+
+.comments .comment .user-name {
+    text-align: center;
+    padding: 1rem 0rem;
+    line-height: 4.2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: #3e86f5;
+}
+
+.comments .comment .brand-name {
+    text-align: center;
+    line-height: 4.2rem;
+    font-weight: 500;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.comments .comment .comment-footer {
+    text-align: center;
+    width: 15rem;
+    height: 10rem;
+    padding: 2.4rem 3rem;
+}
+
+.comments .comment .comment-footer img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.comments .comment-footer .client-rating {
+    display: flex;
+    position: absolute;
+    align-items: center;
+    top: 20%;
+    right: 15%;
+    padding: 0.2rem 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    border-radius: 2rem;
+    background: #fcfcfc;
+}
+
+.comments .comment-footer .client-rating img {
+    padding-right: 0.5rem;
+    max-width: 1.7rem;
+}
+
+.comments .comment-footer {
+    position: absolute;
+    left: 50%;
+    margin-bottom: -3rem;
+    padding-bottom: 1rem;
+    bottom: 0rem;
+    border-radius: 50%;
+    transform: translate(-50%, 0%);
+    background: #ffffff;
+}
+
+.comments .swipe-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10rem;
+    gap: 2rem;
+}
+
+.comments .swipe-buttons button {
+    cursor: pointer;
+    border-color: transparent;
+    background: none;
+    transition: all 0.3s ease-in-out;
+}
+
+.comments .swipe-buttons button img {
+    width: 4.5rem;
+}
+
+.comments .swipe-buttons button:hover {
+    transform: scale(1.05);
+}
+
+.discount {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    width: 80%;
+    padding: 7rem 0rem 10rem;
+    border-radius: 10rem;
+    background-image: url(assets/images/registration-background.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+
+.discount h2 {
+    font-weight: 600;
+    font-size: 5.5rem;
     color: #fff;
+}
+
+.discount .registration-button {
+    margin-top: 4rem;
+    padding: 2.5rem 3.5rem;
+    border: none;
+    border-radius: 2.5rem;
+    font-weight: 600;
+    font-size: 2.2rem;
+    box-shadow: 0 0 50px 0 rgba(255, 255, 255, 0.49);
+    color: #3e86f5;
+    background: #ffffff;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.discount .registration-button:hover {
+    transform: scale(1.05);
+}
+
+.general-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    padding: 5rem 0rem;
+    margin: 0rem auto;
+}
+
+.general-footer .copyrights {
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 4.2rem;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.general-footer .bottom-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.general-footer .bottom-buttons a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2.4rem;
+    padding-left: 5rem;
+    color: rgba(0, 0, 0, 0.75);
+    transition: all 0.3s ease-in-out;
+}
+
+.general-footer .bottom-buttons a:hover {
+    color: #3e86f5;
 }
